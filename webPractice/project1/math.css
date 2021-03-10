@@ -1,0 +1,165 @@
+/* body{
+    font:Aria
+} */
+#contentPane{
+    width: 1050px;
+    /* border: 1px solid grey; */
+    height: auto;
+    margin: 0 auto;
+}
+#header{
+    height: 100px;
+    padding: 10px 0px;
+}
+#brand{
+    float: left;
+}
+h1 a{
+    font-size: 50px;
+    font-weight: 100;
+    color: rgb(91, 37, 141);
+    text-decoration: none;
+}
+#searchBox{
+    width: 400px;
+    height: 50px;
+    float: right;
+    background-color:blueviolet ;
+    padding: 20px 20px 0px 20px;
+    margin-top: 20px;
+}
+.text{
+    float: left;
+    width: 200px;
+    padding: 5px;
+    font-size: 15px;
+    color:orange;
+    border: 1px solid #04ccbb;
+    /* background: white url(search1.png) right center no-repeat; */
+
+}
+.submit{
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background:rgb(229, 23, 91) ;
+    font-size: 15px;
+    
+}
+.clear {
+    clear: both;
+    
+}
+#menu{
+    height: 70px;
+    background: linear-gradient(#94f8e7 ,#911ebe);
+    padding: 7px 0;
+
+}
+ul{
+   list-style: none; 
+}
+#menu ul li{
+float: left;
+padding: 0 30px;
+height: 30px;
+border-right:1px solid rgb(141, 28, 56);
+}
+#menu ul li:last-child{
+    border-right: none;
+}
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color:rgb(63, 71, 148);
+    line-height:30px ;
+    /* transition:font-size 0.5s linear; */
+    -webkit-transition:font-size 0.5s ease;/*for safari */
+    -moz-transition:font-size 0.5s ease;/*for mozla*/
+    -o-transition:font-size 0.5s ease;/*for opera */
+    -ms-transition:font-size 0.5s ease;/*for intenet explorer*/
+
+}
+#menu ul li a:hover ,#menu ul li a.active{
+    font-size: 23px;
+    font-weight: bold;
+    color: red;
+}
+#introduction{
+    background: linear-gradient(#E5F2BB,#B7E952);
+    padding: 30px;
+    margin: 16px 0;
+}
+#introduction h3{
+    font-size: 45px;
+    color:green;
+    font-weight: normal;
+}
+#introduction p{
+    font-size: 25px;
+    color:rgb(18, 175, 175);
+    font-weight: normal;
+    text-align: justify;
+}
+.sidebar{
+    height: 500px;
+    width: 450px;
+    border:1px solid #B7E952;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.sidebar h3{
+    color:purple;
+    font-size: 30px;  
+}
+#leftsidebar ul li {
+    padding: 6px;
+    list-style:square ;
+    padding-left: 10px;
+
+}
+#rightsidebar ul li {
+    padding: 6px;
+    list-style:square;
+
+}
+#sidebar ul{
+    padding: 2px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+}
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color:rgb(19, 55, 214);
+    font-size: 23px;
+    font-weight: bold;
+    -webkit-transition:font-size 0.5s ease;/*for safari */
+    -moz-transition:font-size 0.5s ease;/*for mozla*/
+    -o-transition:font-size 0.5s ease;/*for opera */
+    -ms-transition:font-size 0.5s ease;/*for intenet explorer*/
+}
+#leftsidebar{
+    float: left;
+    font-size: 20px;
+    color: #911ebe;
+}
+#rightsidebar{
+    float: right;
+    font-size: 20px;
+}
+
+.footer{
+    height: 60px;
+    background: linear-gradient(#3c02c4,#0ec55a);
+    padding: 10px 20 px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.footer p{
+    padding:20px;
+    padding-left: 100px;
+    
+}
