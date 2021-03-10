@@ -4,9 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redda</title>
+    <title>Simple Calculator</title>
+<style>
+    body{
+        background-color:black;
+    }
+    #input{
+        width: 400px;
+        height: 500px;
+        margin: 100px auto;
+        border: 20px solid rgb(0, 140, 255);
+        padding: 10px;
+        background-color: rgb(127, 129, 255);
+        box-shadow: 10px 10px 10px 10px rgb(20, 220, 87);
+    }
+    #paramete{
+        margin: 40px auto;
+    }
+    #fValue{
+       /* // margin: 10px; */
+        width: 100px;
+        height: auto;
+        font-size: 15px;
+        
+    }
+    #sValue{
+        /* //margin: 10px; */
+        width: 100px;
+        height: auto;
+        font-size: 15px; 
+       
+    }
+    #fLabel{
+        font-weight:bold
+    }
+    #sLabel{
+        font-weight:bold
+    }
+    #calcu{
+        margin-top: 30px;
+    }
+    #operation{
+        color: brown;
+        height: 30px;
+        width: auto;
+        font-size: 20px;
+        background-color: chartreuse;
+        margin: opx  100 px;
+    }
+    #operator{
+        margin: 20px auto;
+        size: 20px;
+    } 
+    #operation{
+        margin: 20px auto;
+        size: 20px;
+    }
+    #plus{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 255, 115);
+    }
+    #minus{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 255, 115);
+    }
+    #mul{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 255, 115);
+    }
+    #division{
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 255, 115);
+    }
+    #clear{
+        width: 40px;
+        height: 40px;
+        background-color: red; 
+    }
+    #resultId{
+        color: brown;
+        font-size: 20px;
+        font-weight:bold
+    }
+    #result{
+        font-weight:bold
+    }
+    #redda{
+        font-size: 10px;
+        text-align: center;
+        color: rgb(0, 195, 255);
+        box-shadow: 10px 10px 10px 10px rgb(114, 31, 114);
+        font-weight: bolder;
+    }
+</style>
+<script>
+    function add(){
+        let result;
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+         result=num1+num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function sub(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1-num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function mul(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1*num2;
+        document.getElementById("result").innerHTML=result;
+    }
+    function div(){
+        let num1=parseFloat(document.getElementById("fValue").value);
+        let num2=parseFloat(document.getElementById("sValue").value);
+        let result=num1/num2;
+        document.getElementById("result").innerHTML=result.toFixed(4)
+    }
+    function clearInput(){
+        document.getElementById("fValue").value= "";
+        document.getElementById("sValue").value="";
+        document.getElementById("result").innerHTML="";
+    }
+</script>
 </head>
 <body>
- <p>This is my First web site</p>   
+    <div id="input">
+        <div id="redda">
+            <h1>Redda simple calculator</h1>
+        </div>
+        <div id="paramete">
+            <p id="fLabel"> First Value <input type="text" id="fValue"></p>
+           
+        <p id="sLabel">Seconed Value <input type="text" id="sValue"></p>
+            
+        </div>
+     <div id="calcu"> 
+        <sub id="operation">Operator </sub> 
+         <div id="operator">
+            <button id="plus" onclick="add()">+</button> 
+            <button id="minus" onclick="sub()">-</button>  
+            <button id="mul" onclick="mul()">x</button> 
+            <button id="division" onclick="div()">/</button> 
+            <button id="clear" onclick="clearInput()">clear</button> 
+         </div>
+
+     </div>
+     <div>
+         <p id="resultId"> Result: <p id="result"></p></p>
+           
+     </div>
+
+   <div>
+
+   </div>
+    </div>
 </body>
 </html>
