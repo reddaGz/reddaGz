@@ -1,0 +1,27 @@
+*{
+box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.form1{
+    display:flex;
+    padding: 10px;
+    height:100vh;
+    flex-direction: column;
+    /* background-color: blue;*/
+    /* flex-direction: flex-start; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+
+}
+#a{
+  background-color: aqua;
+  margin-top: auto;
+}
+#b{
+ background-color: brown;
+ /* margin-left: auto; */
+ margin-top: auto;
+}
