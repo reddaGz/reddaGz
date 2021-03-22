@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+}
+.head1{
+    /* text-align: center; */
+    margin-top: 40px;
+    margin-left: 200px;
+    color: rgb(105, 14, 14);
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.cs303{
+    width: 600px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 250px;
+    list-style-type:square;
+}
+.week1 ul li a{
+    text-decoration: none;
+}
