@@ -1,0 +1,76 @@
+.group1{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    flex: left;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding-top:200px; */
+}
+.group11{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    flex: 1;
+    
+    
+}
+.mylist{
+    display: none;
+}
+.group11:hover .mylist{
+    flex: 1;
+   background-color: brown;
+    display: block;
+    
+}
+.mylist ul li{
+    list-style-type: none;
+}
+.group12{
+    background-color: blue;
+    flex: 1;
+    
+}
+.group13{
+    background-color: rgb(255, 0, 0);
+    flex: 1;
+    
+}
+.group14{
+    background-color: rgb(0, 255, 76);
+    flex: 1;
+    
+}
+.group15{
+    background-color: rgb(204, 204, 10);
+    flex: 1;
+    
+}
+.group16{
+    background-color: rgba(234, 0, 255, 0.329);
+    flex: 1;
+    
+}
+.group17{
+  background-color: blanchedalmond;
+    flex: 1;
+    
+}
+.group18{
+  background-color: cornflowerblue;
+      flex: 1;
+      
+  }
+  .group19{
+background-color: beige;
+        flex: 1;
+        
+    }
+.group20{
+   background-color: indigo;
+            flex: 1;
+            
+        }
+

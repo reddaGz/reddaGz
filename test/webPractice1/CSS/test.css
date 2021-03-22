@@ -1,0 +1,71 @@
+#title{
+    color:blue
+    
+}
+.facebook{
+    background-image: url(.tiger-medium.jpg);
+    background-size: 100% 100%;
+    height: 100px;
+    width: 100px;
+    padding:10px 5px 7px 3em;
+    border: 10px 15px 5px 10px;
+    border-style:dotted;
+    /* border-radius: 100px; */
+    color: blue;
+    outline-color:red;
+    border-color:grey;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: 70px;
+    margin-right: 40px;
+    /* background-color:rgb(23, 175, 74); */
+    /* background-image:-webkit-gradient() */
+   
+    
+}
+.green{
+    color: red;
+    background-color:green;
+    height: 100px;
+    width: 100px;
+    padding:10px 5px 7px 3em;
+    border: 10px 15px 5px 10px;
+    /* border-radius: 100px; */
+    margin: 100px 200px 200px 40px;
+    border-style:double;
+    border-color: blue;
+}
+.red{
+    background-color:red;
+    color:green;
+    width: 100;
+    height: auto;
+    padding:10px 5px 7px 3em;
+    border: 10px 15px 5px 10px;
+    border-style:groove;
+}
+.yellow{
+    color:black;
+    background-colo:red;
+    width: 100;
+    height: auto;
+}
+.blue{
+    background-color: yellow;
+    color: blue;
+    width: auto;
+    height: auto;
+}
+#great{
+    color: red;
+    background-color: brown;
+}
+.very{
+    color: rebeccapurple;
+}
+.banana{
+    color:red;
+}
+.milk{
+    color:black;
+}
