@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book list</title>
+    <link rel="stylesheet" href="./books.css" />
+    <script src="./books.js"></script>
+  </head>
+  <body>
+    <h1>Library Book</h1>
+    <h3><a href="./books.mov" target="blank">click here to see demo video </a></h3>
+    <div class="book">
+      <div class="book_information">
+        <div class="book_form">
+          <label for="booktitle"> Book Title </label>
+          <input type="text" id="bookTitle" size="40px" />
+        </div>
+        <div class="book_form">
+          <label for="bookAuthor"> Book Author </label>
+          <input type="text" id="bookAuthor" size="40px" />
+        </div>
+        <div class="book_form">
+          <label for="libraryId"> library Id </label>
+          <input type="text" id="libraryId" size="40px" />
+        </div>
+      </div>
+      <div class="button">
+        <input type="button" value="Add book to library" id="addBook" />
+        <input type="button" value="Show title" id="showTitle" />
+        <input type="button" value="Show author" id="showAuthor" />
+        <input type="button" value="Show IDs" id="showId" />
+        <input type="button" value="All information" id="information" />
+        <input type="button" value="more option" id="moreOption" />
+        <input type="button" value="less option" id="lessOption" />
+      </div>
+      <div class="moreOption" id="moreOptionList">
+        <div class="search">
+          <label for=""> Search </label>
+          <input
+            type="text"
+            placeholder="enter value here then select type"
+            id="searchInput"
+          />
+          <select name="search" id="search">
+            <option value="ByTitle">ByTitle</option>
+            <option value="ById">ById</option>
+            <option value="ByAuthor">ByAuthor</option>
+          </select>
+        </div>
+        <div class="sort">
+          <label for=""> sort </label>
+          <select name="sort" id="sort">
+            <option value="ByTitle">ByTitle</option>
+            <option value="ById">ById</option>
+            <option value="ByAuthor">ByAuthor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="textArea">
+        <textarea
+          name="textArea"
+          id="displayArea"
+          cols="90px"
+          rows="20px"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>
