@@ -152,28 +152,38 @@ function showAllInformation(){
 function showTitle(){
     let title=""
     let i=0;
-    for(let i=0;i<booksList.length;i++){
-        title+=i+1 +"."+(booksList[i].title+"\n" )
+let sortedByTitle=booksList.sort((a,b)=>{
+    if(a.title>b.title) return 1
+    else if(a.title<b.title) return -1
+    else return 0;
+
+})
+    for(let i=0;i<sortedByTitle.length;i++){
+        title+=i+1 +"."+(sortedByTitle[i].title+"\n" )
     }
-    document.getElementById("displayArea").value=title;
+    document.getElementById("displayArea").innerHTML=title;
 }
 /**
  * This is a method that help us to display all author of the book in the library
  */
 function showAuthor(){
     let author=""
-    let i=0;
-    for(let i=0;i<booksList.length;i++){
-        author+=i+1 +"."+(booksList[i].author+"\n" )
+    let sortedByAuthor=booksList.sort((a,b)=>{
+        if(a.author>b.author) return 1;
+        else if(a.author<b.author) return -1
+        else return 0
+    })
+    for(let i=0;i<sortedByAuthor.length;i++){
+        author+=i+1 +"."+(sortedByAuthor[i].author+"\n" )
     }
-    document.getElementById("displayArea").value=author;
+    document.getElementById("displayArea").innerHTML=author;
 }
 /**
  * This is a method that help us to display all id of the book in the library
  */
 function showId(){
     let id=""
-    let i=0;
+    let sortedById=booksList.sort((a,b)=>a.id-b.id)
     for(let i=0;i<booksList.length;i++){
         id+=i+1 +"."+(booksList[i].id+"\n" )
     }
