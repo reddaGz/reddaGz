@@ -21,4 +21,14 @@ describe("calculator from constructor function", function () {
         assert.strictEqual(calc.b, 30);
         assert.strictEqual(calc.mul(), 600);
     });
+    it("when 20 and 30 are entered, the subtraction is -10", function () {
+        assert.strictEqual(calc.a, 20);
+        assert.strictEqual(calc.b, 30);
+        assert.strictEqual(calc.sub(), -10);
+    });
+    it("when 20 and 30 are entered,20 divided by 30 is 0.666667", function () {
+        assert.strictEqual(calc.a, 20);
+        assert.strictEqual(calc.b, 30);
+        assert.strictEqual(calc.div(), (2/3));
+    });
 });
