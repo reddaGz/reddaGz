@@ -3,6 +3,10 @@
  *  * @returns {Calculator} constructor function
  */
 function Calculator(){
+    this.setValue=function(a,b){
+        this.a=a;
+        this.b=b;
+    }
     /**
      * 
      * @returns{Number} sum;

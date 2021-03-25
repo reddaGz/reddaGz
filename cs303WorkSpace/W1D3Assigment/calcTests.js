@@ -6,8 +6,9 @@ describe("calculator from constructor function", function () {
     let calc;  
     before(function () {
         calc = new Calculator();
-        calc.a = 20;
-        calc.b = 30;
+        calc.setValue(20,30)
+        // calc.a = 20;
+        // calc.b = 30;
     });
 
     it("when 2 and 3 are entered, the sum is 50", function () {
