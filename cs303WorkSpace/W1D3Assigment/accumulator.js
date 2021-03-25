@@ -23,6 +23,3 @@ function Accumulator(currentValue,increment){
           return this.currentValue;   
        }
 }
-let acu= new Accumulator(4,6)
-let acu= new Accumulator(4,6)
-accumulate();
