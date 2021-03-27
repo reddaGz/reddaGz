@@ -3,7 +3,7 @@
 /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser */
 // module.exports = { groupById, unique, filterRangeInPlace, filterRange, Calculator }; //add all of your function names here that you need for the node mocha tests
 /**
- * 
+ *
  * @param {Object} arr is array
  * @param {Number} a is min number
  * @param {Number} b is max number
@@ -26,24 +26,23 @@ function filterRangeInPlace(arr, a, b) {
  * @returns {Calculator} constructor function
  */
 function Calculator() {
-    
   this.methods = {
-      /**
-       * 
-       * @param {Number} a is number; 
-       * @param {Number} b is number;
-       * @returns{Number} return a-b; 
-       */
+    /**
+     *
+     * @param {Number} a is number;
+     * @param {Number} b is number;
+     * @returns{Number} return a-b;
+     */
     "-": (a, b) => a - b,
     /**
-     * 
+     *
      * @param {Number} a is number;
      * @param {Number} b is number;
      * @returns{Number} return a+b;
      */
     "+": (a, b) => a + b,
-     /**
-     * 
+    /**
+     *
      * @param {Number} a is number;
      * @param {Number} b is number;
      * @returns{Number} return a/b;
@@ -51,8 +50,8 @@ function Calculator() {
     "/": (a, b) => a / b,
   };
   /**
-   * 
-   * @param {String} str is String 
+   *
+   * @param {String} str is String
    * @returns {Number} return compute number;
    */
   this.calculate = function (str) {
@@ -67,17 +66,17 @@ function Calculator() {
 
     return this.methods[op](a, b);
   };
-/**
- * 
- * @param {String} name is operator;
- * @param {Function} func is function ;
- */
+  /**
+   *
+   * @param {String} name is operator;
+   * @param {Function} func is function ;
+   */
   this.addMethod = function (name, func) {
     this.methods[name] = func;
   };
 }
 /**
- * 
+ *
  * @param {String} arr is array of string;
  * @returns {String} return unique values
  */
@@ -90,18 +89,18 @@ function unique(arr) {
   return uniqueResult;
 }
 /**
- * 
+ *
  * @param {Object} array is array;
  * @returns {Object} return object;
  */
 function groupById(array) {
-    return array.reduce((obj, value) => {
-        obj[value.id] = value;
-        return obj;
-      }, {})
+  return array.reduce((obj, value) => {
+    obj[value.id] = value;
+    return obj;
+  }, {});
 }
 /**
- * 
+ *
  * @param {Object} arr is array;
  * @returns {Object} return sorted value;
  */
