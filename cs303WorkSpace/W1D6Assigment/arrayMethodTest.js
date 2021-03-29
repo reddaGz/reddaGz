@@ -86,4 +86,39 @@ describe("filter practice", function () {
         { name: "Barney", age: 81 }]), false);
     });
 
+    
+
+});
+
+
+describe("reduce practice", function () {
+    // beforeEach(function () {
+    //     numArray = [5, 0, 7, 77, -20, 300, 51, 2];
+    //     peopleArray = [{ name: "Sam", age: 15 }, 
+    //     { name: "William", age: 6 }, 
+    //     { name: "Lucy", age: 13 }, 
+    //     { name: "Barney", age: 80 }];
+    // });
+
+    it("find sum of array using reduce",function(){
+        assert.deepEqual(findSum([3,5,1,6,5]),20);
+    });
+    
+    it("find average of the array using reduce method",function(){
+        assert.deepEqual(findAverage([3,5,1,6,5]),4);
+    });
+    it("find maximum of the array using reduce method",function(){
+        assert.deepEqual(findMax(numArray),300);
+    });
+    it("find even age averages ",function(){
+        assert.deepEqual(findMaxAge(peopleArray),{ name: 'Barney', age: 80 });
+    });
+    it("find even age averages using map reduce filter chaining method ",function(){
+        assert.deepEqual(filterEvenAgeAverage(peopleArray),43);
+    });
+    it(" find odd age averages using map reduce filter chaining method",function(){
+        assert.deepEqual(filterOddAgeAverage(peopleArray),14);
+    });
+
+
 });
