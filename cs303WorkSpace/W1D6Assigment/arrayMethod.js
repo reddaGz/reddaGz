@@ -28,8 +28,8 @@ function filterEven(arr){
 }
 
 function filterOver10(arr) {
-    let over10=arr.filter((obj)=>obj.age>10)
-    return over10;
+    // let over10=
+    return arr.filter((obj)=>obj.age>10);
 }
 
 function findEvenNum(arr){
@@ -75,25 +75,14 @@ function findAverage(arr){
 }
 function findMax(arr){
    return arr.reduce((max,current)=>max>current?max:current,arr[0])
-    // return maximum;
 }
-// console.log(findSum(numArray))
-// console.log(findAverage(numArray))
-// console.log(findMax(numArray))
 
-// let peopleArray = [
-//     {
-//      name: "Sam", age: 15 }, 
-// { name: "William", age: 6 }, 
-// { name: "Lucy", age: 13 }, 
-// { name: "Barney", age: 80 }];
 function findMaxAge(arr){
     let maxAge=arr.reduce((max,current)=>max>current?max:current,arr[0])
     //let maxAge=arr.reduce((max,current)=>max>current.age?max:current.age,arr[0].age)
     //if we want to return the value only
     return maxAge;
 }
-// console.log(findMaxAge(peopleArray))
 
 function filterEvenAgeAverage(arr) {
     let len=arr.filter((obj)=>obj.age%2===0).length;
@@ -111,6 +100,5 @@ function filterOddAgeAverage(arr) {
     let avg=result.map((n)=>n/len)[0];
     return avg
 }
-// console.log(filterEvenAge(peopleArray))
-// console.log(filterOddAge(peopleArray))
+
 

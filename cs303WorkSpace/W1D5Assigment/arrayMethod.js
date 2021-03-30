@@ -10,8 +10,14 @@
  * @returns {Object} return array in range [a,b]
  */
 function filterRange(arr, a, b) {
-  let filteredArray = arr.filter((item) => a <= item && item <= b);
+  let filteredArray = arr.filter(filterR);
   return filteredArray;
+}
+
+function filterR(n,a,b){
+  if(n<=a&& n<=b)
+  return item
+      
 }
 function filterRangeInPlace(arr, a, b) {
   for (let i = 0; i < arr.length; i++) {

@@ -21,12 +21,13 @@ Create the function topSalary(salaries) that returns the name of the top-paid pe
 P.S. Use Object.entries and destructuring to iterate over key/value pairs.
 */
 describe("topSalary", function() {
+  let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+  };
     it("returns top-paid person", function() {
-      let salaries = {
-        "John": 100,
-        "Pete": 300,
-        "Mary": 250
-      };
+     
   
       assert.equal( topSalary(salaries), "Pete" );
     });

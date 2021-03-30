@@ -9,7 +9,7 @@
  */
 function topSalary(salaries) {
     if(Object.keys(salaries).length===0)
-    return null;
+       return null;
     let nameOfTopSalary;
     let topSalary=-Infinity;
     for(let key in salaries){
