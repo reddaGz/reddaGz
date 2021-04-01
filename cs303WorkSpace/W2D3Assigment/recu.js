@@ -32,49 +32,51 @@ function fibonacci(n){
 /**
  * this input list to test the recurtion
  */
-let list = {
-    value: 1,
-    next: {
-      value: 2,
-      next: {
-        value: 3,
-        next: {
-          value: 4,
-          next: null
-        }
-      }
-    }
-  };
+// let list = {
+//     value: 1,
+//     next: {
+//       value: 2,
+//       next: {
+//         value: 3,
+//         next: {
+//           value: 4,
+//           next: null
+//         }
+//       }
+//     }
+//   };
   /**
    * 
    * @param {Object} list is object
    * @param {Object} result is array
    * @returns {Object} return preorder;
    */
-  function outputListLoop(list,result=[]){
+  function outputListLoop(list,result=""){
       while(list!==null){
-        result.push(list.value)
+        result+=list.value+" "
           list=list.next
       }
       return result
   }
+//   console.log(outputListLoop(list))
+//   console.log(outputListLoop(list)==="1234")
   /**
    * 
    * @param {Object} list is object
    * @param {Object} result is array
    * @returns {Object} return preorder;
    */
-  function outputList(list,result=[]){
+  function outputList(list,result=""){
       if(list===null){
         return result
       } 
      else{
-         result.push(list.value)
+         result+=list.value+" "
          return outputList(list.next,result)
     
-     }
-     
+     } 
   }
+  //console.log(outputList(list))
 /**
    * 
    * @param {Object} list is object
@@ -82,25 +84,27 @@ let list = {
    */
   function reverseListLoop(list){
       let result=[]
-      let reverse=[]
+      let reverse=""
       while(list!==null){
         result.push(list.value)
           list=list.next
       }
     for(let i=result.length-1;i>=0;i--){
-        reverse.push(result[i])
+        reverse+=result[i]+" "
     }
     return reverse
   }
+  //console.log(reverseListLoop(list))
   /**
    * 
    * @param {Object} list 
    */
-   function printReverseList(list) {
+   function reverseList(list,result="") {
   
     if (list.next) {
-      printReverseList(list.next);
+        reverseList(list.next,result);
     }
-    console.log(list.value);
+    // console.log(list.value)//am commented this part b.c of the console part to be able to run on the browesor
   }
    
+
