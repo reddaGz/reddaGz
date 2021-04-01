@@ -26,7 +26,7 @@ function myFilter(arr ,callBack){
  * @param {Any} intialValues is intial values
  * @returns {Any} returns the computed result 
  */
-function myReduce(arr,callBack,intialValues=0){
+function myReduce(arr,callBack,intialValues=0){//default value
     let result=intialValues;
     result=callBack(arr)
     return result;
