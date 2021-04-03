@@ -1,0 +1,39 @@
+/*
+CSE 190 M, Summer 2012, Roy McElmurry
+CSS styles for tip calculator page
+*/
+.bodyStyle{
+	margin: 60px 60px 40px 40px;
+	width: 600px;
+	height: 500px;
+	border: 1px solid ;
+	background-color: red;
+	box-shadow: 10px 10px 10px 10px blue;
+}
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: black;
+
+}
+
+body, input, button {
+	font-family: "Century Gothic", sans-serif;
+	font-size: 20pt;
+}
+
+div {
+	margin: 0.5em;
+}
+
+.awesome {
+	background-color: pink;
+}
+.alarm{
+	margin: 60px 60px 40px 40px;
+	width: 600px;
+	height: 500px;
+	border: 1px solid ;
+	background-color: rgb(0, 255, 0);
+	box-shadow: 10px 10px 10px 10px blue;
+}
