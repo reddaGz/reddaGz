@@ -1,7 +1,6 @@
 function ListNode(value,next){
     this.value=value,
     this.next=next
-    
 }
 function findListNode(node,target){
     if(node.next===null)

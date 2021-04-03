@@ -69,6 +69,8 @@ function TreeNode(value) {
     //console.log("abe values"+abe)
     // console.log(homer.descendents)
     //console.log(abe.descendents[])
+    console.log("==================Tree collector================================")
+    console.log(treeCollector(abe))
     console.log("====================contains==============================")
      console.log(contains(abe,"Bart"))//true
      console.log(contains(abe,"Redda"))//false
@@ -79,10 +81,9 @@ function TreeNode(value) {
      console.log(homer)//all must be capital after calling the tree modifier
      console.log("==================treeModifier  addStar================================")
      treeModifier(abe,addStar)
-     console.log(homer)//all must include ***value***
+     console.log(abe)//all must include ***value***
      console.log("==================treeModifier reverseValue================================")
      treeModifier(abe,reverseValue)
      console.log(homer)
-     console.log("==================Tree collector================================")
-     console.log(treeCollector(abe))
+    
 
