@@ -7,9 +7,11 @@ function bankAcount() {
   const bank = {
     transactionsDB: [],
   };
-  return bank;
+  return function(){
+    return bank
+  };
 }
-let banks = bankAcount();
+let banks = bankAcount()();
 banks.transactionsDB = [
   { customerId: 1, customerTransactions: [10, 50, -40] },
   { customerId: 2, customerTransactions: [10, 10, -10] },
