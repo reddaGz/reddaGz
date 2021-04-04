@@ -22,9 +22,9 @@ function printNumbers(from, to) {
     let current = from;
     function go() {
         console.log(current);
-        // if (current < to) {
-        //   setTimeout(go, 1000);
-        // }
+        if (current < to) {
+          setTimeout(go, 1000);
+        }
         current++;
       }
     setTimeout(go, 1000);
