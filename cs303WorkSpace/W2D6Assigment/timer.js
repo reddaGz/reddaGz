@@ -22,9 +22,9 @@ function printNumbers(from, to) {
     let current = from;
     function go() {
         console.log(current);
-        if (current < to) {
-          setTimeout(go, 1000);
-        }
+        // if (current < to) {
+        //   setTimeout(go, 1000);
+        // }
         current++;
       }
     setTimeout(go, 1000);
@@ -41,15 +41,14 @@ function printNumbers(from, to) {
  */
 function printNubersOnDelay(from, to) {
     let current = from;
-    let delay=1000//(5,10) to print 5 will delay 5000 for 6 6000,7 7000 etc
-    let timerId = setInterval(timer, delay); 
+    let delay=1000//(5,10) to print 5 will delay 1000 for 6 6000,7 7000 etc
+    let timerId = setTimeout(timer, delay); 
    function timer (){
         console.log(current);
         delay=current*1000
-        clearInterval(timerId);
-        timerId = setInterval(timer, delay);
+        timerId = setTimeout(timer, delay); 
         if (current == to) {
-          clearInterval(timerId);
+          clearTimeout(timerId);
         }
         current++;
       }
