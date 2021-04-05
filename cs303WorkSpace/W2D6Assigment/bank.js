@@ -12,11 +12,7 @@ function makeAcount() {
   ];
   bank.getBalance = function (id) {
     const customer = bank.getCustomer(id);
-    let balance = 0;
-    for (const trans of customer.customerTransactions) {
-      balance += trans;
-    }
-    return balance;
+   return customer.customerTransactions.reduce((sum,item)=>sum+item,0)
   };
   bank.getCustomer = function (id) {
     const customer = bank.transactionsDB.find(
