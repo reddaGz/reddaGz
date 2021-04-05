@@ -3,59 +3,56 @@
  *
  * @returns{Object} returns bank acount
  */
-function bankAcount() {
-  const bank = {
-    transactionsDB: [],
-  };
-  return function(){
-    return bank
-  };
-}
-let banks = bankAcount()();
-banks.transactionsDB = [
-  { customerId: 1, customerTransactions: [10, 50, -40] },
-  { customerId: 2, customerTransactions: [10, 10, -10] },
-  { customerId: 3, customerTransactions: [5, -5, 55] },
-];
-banks.getBalance = function (id) {
-  const customer = banks.getCustomer(id);
-  let balance = 0;
-  for (const trans of customer.customerTransactions) {
-    balance += trans;
-  }
-  return balance;
-};
-banks.getCustomer = function (id) {
-  const customer = banks.transactionsDB.find(
-    (customer) => customer.customerId === id
-  );
-  return customer;
-};
-banks.debit = function (id, amount) {
-  let currentBalance = banks.getBalance(id);
-  if (amount < 0) return "Invalid input";
-  if (currentBalance < amount) return "insufficient balance";
-  else{
-      banks.saveTransactions(id,-amount)
-      return "successfully"
-  }
-};
-banks.credit = function (id, amount) {
-    if (amount < 0) return "Invalid input";
-        banks.saveTransactions(id,amount)
-        return "successfully"
-  };
-banks.saveTransactions=function(id ,amount){
-    let customer=banks.getCustomer(id)
-    customer.customerTransactions.push(amount)
-}
-banks.overAllBalance=function(){
-    let totalBalance=0
-    for(let cust of banks.transactionsDB){
-        totalBalance+=cust.customerTransactions.reduce((sum,bal)=>sum+bal,0)
+function makeAcount() {
+  const bank = {}
+  bank.transactionsDB = [
+    { customerId: 1, customerTransactions: [10, 50, -40] },
+    { customerId: 2, customerTransactions: [10, 10, -10] },
+    { customerId: 3, customerTransactions: [5, -5, 55] },
+  ];
+  bank.getBalance = function (id) {
+    const customer = bank.getCustomer(id);
+    let balance = 0;
+    for (const trans of customer.customerTransactions) {
+      balance += trans;
     }
-    return totalBalance;
+    return balance;
+  };
+  bank.getCustomer = function (id) {
+    const customer = bank.transactionsDB.find(
+      (customer) => customer.customerId === id
+    );
+    return customer;
+  };
+  bank.debit = function (id, amount) {
+    let currentBalance = bank.getBalance(id);
+    if (amount < 0) return "Invalid input";
+    if (currentBalance < amount) return "insufficient balance";
+    else{
+        bank.saveTransactions(id,-amount)
+        return "successfully"
+    }
+  };
+  bank.credit = function (id, amount) {
+      if (amount < 0) return "Invalid input";
+          bank.saveTransactions(id,amount)
+          return "successfully"
+    };
+  bank.saveTransactions=function(id ,amount){
+      let customer=bank.getCustomer(id)
+      customer.customerTransactions.push(amount)
+  }
+  bank.overAllBalance=function(){
+      let totalBalance=0
+      for(let cust of bank.transactionsDB){
+          totalBalance+=cust.customerTransactions.reduce((sum,bal)=>sum+bal,0)
+      }
+      return totalBalance;
+  }
+  return bank
 }
+let banks = makeAcount();
+
 console.log(banks.transactionsDB);
 console.log(banks.getCustomer(2));
 console.log(banks.getBalance(2));
