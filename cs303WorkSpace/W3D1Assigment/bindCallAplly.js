@@ -25,7 +25,7 @@ function askPassword(ok, fail) {
   askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
 
   /**
- * this is ask password using bind
+ * this is ask password using call
  */
 console.log("\nthis is using call to solve problem of this \n")
 function askPassword1(ok, fail) {
@@ -49,7 +49,7 @@ function askPassword1(ok, fail) {
   askPassword1.call(user1,user1.loginOk,user1.loginFail);
 
   /**
- * this is ask password using bind
+ * this is ask password using apply
  */
 console.log("\nthis is using apply to solve problem of this \n")
 function askPassword2(ok, fail) {
@@ -71,6 +71,7 @@ function askPassword2(ok, fail) {
   };
   
   askPassword2.apply(user2,[user2.loginOk,user2.loginFail]);
+  
 /**
  * this is using arrow function to keep the context of this
  */
