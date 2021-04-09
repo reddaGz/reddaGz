@@ -19,4 +19,4 @@ function findListNode(node,target){
     const abe = new ListNode('Abe',homer);
     const head=new ListNode("head",abe)
     console.log("print all the lists homer ")
-    console.log(findListNode(head,"Homer"))
+    console.log(findListNode(head,"Abe"))

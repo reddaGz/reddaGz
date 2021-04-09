@@ -19,13 +19,13 @@ function findSubtree(root,target){
         for(let value of root.descendents ){
           return  findSubtree(value,target)
         }
-        return 
+        return null
     }
 }
 function  treeModifier(root, modiferFunc){
-     if(root.value)
+     if(root)
          root.value= modiferFunc(root)
-        for(let node of root.descendents ){
+     for(let node of root.descendents ){
              treeModifier(node,modiferFunc)
         }
     }
@@ -86,4 +86,11 @@ function TreeNode(value) {
      treeModifier(abe,reverseValue)
      console.log(homer)
     
+// let arr=[4,6,7,12,78,9]
+//      console.log(Math.max(...arr))
+//      console.log(Math.max(4,6,7,12,78,9))
+
+
+
+
 

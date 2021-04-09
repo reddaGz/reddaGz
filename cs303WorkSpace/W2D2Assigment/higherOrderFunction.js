@@ -27,10 +27,17 @@ function myFilter(arr ,callBack){
  * @returns {Any} returns the computed result 
  */
 function myReduce(arr,callBack,intialValues=0){//default value
-    let result=intialValues;
-    result=callBack(arr)
-    return result;
+
+    for(let n of arr){
+        intialValues =callBack(n,intialValues)
+   }
+   return intialValues
 }
+// let arr=[20,4,5,40,6,7,8]
+// function add(n1,n2){
+//     return n1>n2?n1:n2
+// }
+// console.log(myReduce(arr,add,arr[0]))
 /**
  * 
  * @param {Object} arr is array;
@@ -38,9 +45,11 @@ function myReduce(arr,callBack,intialValues=0){//default value
  * @param {Number} n is number
  * @returns{Number} return the first found values of n
  */
-function myFind(arr,callBack,n){
-    let found= callBack(arr,n)
-    return found;
+function myFind(arr,callBack,num){
+   for(let n of arr ){
+      if(callBack(n,num))
+      return n;
+   }
 }
 /**
  * 
