@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check out book</title>
+    <link rel="stylesheet" href="checkoutbook.css" />
+    <script src="/cs303Project/librarayManagment/status.js"></script>
+    <script src="/cs303Project/librarayManagment/storage.js"></script>
+    <script src="/cs303Project/librarayManagment/address.js"></script>
+    <script src="/cs303Project/librarayManagment/person.js"></script>
+    <script src="/cs303Project/librarayManagment/member.js"></script>
+    <script src="/cs303Project/librarayManagment/book.js"></script>
+    <script src="/cs303Project/librarayManagment/checkOut.js"></script>
+    <script src="/cs303Project/librarayManagment/librarian.js"></script>
+    <script src="/cs303Project/librarayManagment/admin.js"></script>
+    <script src="/cs303Project/librarayManagment/superAdmin.js"></script>
+   <script src="/cs303Project/librarayManagment/checkOutBook.js"></script>
+  </head>
+  <body>
+    <div>Welcome to libraraian pages</div>
+    <form action="" class="allForm">
+      <div>
+        <p>check out forms</p>
+      </div>
+      <div class="form">
+        <div class="detailes">
+          <div class="checkOutform">
+            <label for="memeberId">Member id *</label>
+            <input type="text" placeholder="member id" id="memeberId" />
+          </div>
+          <div class="checkOutform">
+            <label for="bookId">book id *</label>
+            <input type="text" placeholder="book id" id="bookId" />
+          </div>
+          <div class="checkOutform">
+            <label for="first name">First name</label>
+            <input readonly type="text" placeholder="first name" id="firstName" />
+          </div>
+          <div class="checkOutform">
+            <label for="last name">Last name</label>
+            <input readonly type="text" placeholder="last name" id="lastName" />
+          </div>
+          <div class="checkOutform">
+            <label for="check out date">Date </label>
+            <input readonly type="text" placeholder="date YYY/MM/D" id="checkOutDate" />
+          </div>
+          <div class="checkOutform">
+            <label for="due date">Due date </label>
+            <input  type="text" placeholder="due date YYY/MM/D" id="dueDate" />
+          </div>
+          <div class="saveButton">
+            <button id="checkButton">check</button>
+            <button id="saveCheckOut">Save</button>
+          </div>
+        </div>
+        <div class="comment">
+          <label for="comments">
+            comments
+            <textarea
+              name="textarea"
+              id="textaraComment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </div>
+      </div>
+      <li style="text-decoration: none">
+        <a href="/cs303Project/htmlSource/superAdminMenu/menu.html" style="text-decoration: none"> back</a>
+      </li>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    
+}
+.list{
+    margin-top: 60px;
+    text-align: center;
+    font-size: xx-large;
+}
+.textArea{
+    margin-top: 60px;
+    text-align: center;
+    font-size: xx-large;
+}
+.button{
+    margin-top: 20px;
+    text-align: center;
+    flex: 1;
+}
+.button input{
+    background-color:aqua;
+    font-weight: bolder;
+   font-family:'Times New Roman', Times, serif;
+}
+.button input:hover{
+    background-color:green;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.search{
+    margin-top: 20px;
+    text-align: center;
+}
+#searchMember{
+    background-color:aqua;
+    font-weight: bolder;
+   font-family:'Times New Roman', Times, serif;  
+}
+#searchMember  :hover{
+    background-color:green;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.back{
+    text-align: center;
+    margin-top: 15px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in page</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script src="/cs303Project/librarayManagment/loginPage.js"></script>
+  </head>
+  <body>
+    <div class="login" id="loginstatus">
+      <div class="welcome">
+        <label for=""
+          >Welcome to maharashi international university library managment</label
+        >
+      </div>
+      <div class="loginForm">
+        <div class="role">
+          <label for="role"> Role</label>
+          <select name="role" id="roleId" class="roleOption">
+            <option value="librarian">Librarian</option>
+            <option value="admin">Admin</option>
+            <option value="superAdmin">Super Admin</option>
+          </select>
+        </div>
+        <div class="user_name">
+          <label for="username"> User name </label>
+          <input type="text" id="username" placeholder="user name" />
+        </div>
+        <div class="password">
+          <label for="password"> Password </label>
+          <input type="password" id="password" placeholder="password" />
+        </div>
+        <div class="user_button">
+          <button id="loginButton">login</button>
+        </div>
+      </div>
+      <div class="statusRole" id="status_role" >
+         <p id="status">wrong try again </p>
+      </div>
+    </div>
+    <div class="libararianPage" id="pageLibrarian">
+      <li><a href="/cs303Project/htmlSource/librarayMenu/menu.html">click librarian</a> </li>
+    </div>
+    <div class="adminPage" id="pageAdmin">
+      <li><a href="/cs303Project/htmlSource/adminMenu/menu.html">click admin</a> </li>
+    </div>
+    <div class="superAdminpage" id="pageSuperAdmin">
+      <li><a href="/cs303Project/htmlSource/superAdminMenu/menu.html">click super admin</a> </li>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new member</title>
+    <link rel="stylesheet" href="addBokk.css" />
+    <script src="/cs303Project/librarayManagment/storage.js"></script>
+    <script src="/cs303Project/librarayManagment/address.js"></script>
+    <script src="/cs303Project/librarayManagment/person.js"></script>
+    <script src="/cs303Project/librarayManagment/member.js"></script>
+    <script src="/cs303Project/librarayManagment/book.js"></script>
+    <script src="/cs303Project/librarayManagment/librarian.js"></script>
+    <script src="/cs303Project/librarayManagment/admin.js"></script>
+    <script src="/cs303Project/librarayManagment/superAdmin.js"></script>
+    <script src="/cs303Project/librarayManagment/addBook.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="sub_form">
+        <div class="detailes">
+          <div class="address">
+            <div class="groupForm">
+              <label for="bookId"> Book id</label>
+              <input
+                type="text"
+                id="bookId"
+                placeholder="book id "
+              />
+            </div>
+            <div class="groupForm">
+              <label for="bookTitle">Book title</label>
+              <input type="text" id="title" placeholder="book title" />
+            </div>
+            <div class="addressParagraph">
+                <p>Author</p>
+              </div>
+              <div class="numberOfAuthor">
+                   <input type="text" placeholder="number of author" id="authorNumber">
+              </div>
+             
+            <div class="groupForm">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" placeholder="author first name" />
+            </div>
+            <div class="groupForm">
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" placeholder="author last name" />
+            </div>
+            <div class="groupForm">
+              <label for="dateOfBirth">Date of birth</label>
+              <input
+                type="text"
+                id="dateOfBirth"
+                placeholder="author Dob YYYY/MM/DD"
+              />
+            </div>
+            <div class="groupForm">
+              <label for="phone">Phone number</label>
+              <input
+                type="text"
+                id="phoneNum"
+                placeholder="phone number"
+              />
+            </div>
+            <div class="addressParagraph">
+              <p>Address</p>
+            </div>
+            <div class="groupForm">
+              <label for=" street">Street</label>
+              <input type="text" id="street" placeholder=" author street" />
+            </div>
+            <div class="groupForm">
+              <label for="city">Street</label>
+              <input type="text" id="city" placeholder="author city" />
+            </div>
+            <div class="groupForm">
+              <label for="state">Street</label>
+              <input type="text" id="state" placeholder="author state" />
+            </div>
+            <div class="groupForm">
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" placeholder="author zip " />
+            </div>
+          </div>
+        </div>
+        <div class="comments">
+          <p>comments</p>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="add_button">
+        <button id="addBook">Add book</button>
+      </div>
+      <div class="back">
+        <li style="text-decoration: none; text-align: center">
+          <a href="/cs303Project/htmlSource/superAdminMenu/menu.html"> back</a>
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

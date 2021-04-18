@@ -1,7 +1,6 @@
 "use strict";
 /* global exports */
 
-
 /**
  * A Bank Account class
  * 

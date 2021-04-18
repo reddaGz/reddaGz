@@ -6,7 +6,10 @@
  * @returns{Object} return mapped values 
  */
 function myMap(arr,CallBack){
-    let mapArr=CallBack(arr)
+    let mapArr=[];
+    for(let n of arr){
+          mapArr.push(callBack(n))
+    }
     return mapArr
 }
 /**
@@ -16,7 +19,11 @@ function myMap(arr,CallBack){
  * @returns{Object} returns filtered value
  */
 function myFilter(arr ,callBack){
-  let filterArr=callBack(arr)
+  let filterArr=[]
+      for(let n of arr){
+         if(callBack(n))
+         filterArr.push(n)
+      } 
   return filterArr;
 }
 /**
@@ -59,8 +66,11 @@ function myFind(arr,callBack,num){
  * @returns{Number} return the first index of n; 
  */
 function myFindIndex(arr,callBack,n){
-    let index=callBack(arr,n)
-    return index;
+    for(let i=0;i<arr.length;i++){
+        if(callBack(arr[i]))
+           return i
+    }
+    return -1;
 }
 /**
  * 

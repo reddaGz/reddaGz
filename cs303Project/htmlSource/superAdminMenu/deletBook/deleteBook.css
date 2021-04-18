@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0;
+    padding: 0; 
+    background-image: url("/cs303Project/libImg.jpeg"); 
+}
+.delteForm{
+    
+    width: 800px;
+    height: 150px;
+    text-align: center;
+    margin-top: 300px;
+    font-weight: bolder;
+    background-color: cadetblue;
+    margin-left: 250px;
+}
+/* .deletButton{
+    margin-top: 30px;
+} */
+.inputForms label{
+    font-size: xx-large;
+}
+.inputForms input{
+    font-size: xx-large;
+}
+.deletButton button{
+    margin-top: 20px;
+     color: red;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.deletButton button:hover{
+    background-color: blue;
+}

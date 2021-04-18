@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of members</title>
+    <link rel="stylesheet" href="viewMemebr.css" />
+    <script src="/cs303Project/librarayManagment/storage.js"></script>
+    <script src="/cs303Project/librarayManagment/address.js"></script>
+    <script src="/cs303Project/librarayManagment/person.js"></script>
+    <script src="/cs303Project/librarayManagment/member.js"></script>
+    <script src="/cs303Project/librarayManagment/book.js"></script>
+    <script src="/cs303Project/librarayManagment/librarian.js"></script>
+    <script src="/cs303Project/librarayManagment/admin.js"></script>
+    <script src="/cs303Project/librarayManagment/superAdmin.js"></script>
+    <script src="/cs303Project/librarayManagment/viewMember.js"></script>
+  </head>
+  <body>
+    <div class="list">list of library members</div>
+    <div class="button">
+      <input type="button" value="Show library member" id="showName" />
+    </div>
+    <div class="search">
+      <input type="text" placeholder="enter member id" id="searchInput" />
+      <input type="button" value="search" id="searchMember" />
+    </div>
+    <div class="back">
+      <li style="text-decoration: none ; text-align: center;">
+        <a
+        href="/cs303Project/htmlSource/superAdminMenu/menu.html"
+      >
+        back</a
+      >
+      </li>
+    </div>
+   
+    <div class="textArea">
+      <textarea readonly name="" id="memberList" cols="150" rows="100"></textarea>
+    </div>
+  </body>
+</html>

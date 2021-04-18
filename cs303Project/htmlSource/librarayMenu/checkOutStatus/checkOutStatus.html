@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check out book</title>
+    <link rel="stylesheet" href="checkOutStatus.css" />
+  </head>
+  <body>
+    <div>Welcome to libraraian pages</div>
+    <form action="" class="allForm">
+      <div>
+        <p>check out status</p>
+      </div>
+      <div class="form">
+        <div class="detailes">
+          <div class="checkOutform">
+            <label for="memeberId">Member id</label>
+            <input  type="text" placeholder="member id" id="memeberId" />
+            <!-- <div class="saveButton"> -->
+                <button>Check status</button>
+              <!-- </div> -->
+          </div>
+          <div class="statusList" id="show_status">
+            <div class="checkOutform">
+                <label for="first name">First name</label>
+                <input readonly  type="text" placeholder="first name" id="firstName" />
+              </div>
+              <div class="checkOutform">
+                <label for="last name">Last name</label>
+                <input readonly type="text" placeholder="last name" id="lastName" />
+              </div>
+              <div class="checkOutform">
+                <label for="check out date">Date taken </label>
+                <input readonly type="text" placeholder="date YYY/MM/D" id="checkOutDate" />
+              </div>
+              <div class="checkOutform">
+                <label for="how many day">Number of days</label>
+                <input readonly type="text" placeholder="how many days" id="numberOfDays" />
+              </div>
+              <div class="checkOutform">
+                <label for="due date">Due date </label>
+                <input readonly type="text" placeholder="date YYY/MM/D" id="dueDate" />
+              </div>
+          </div>
+          
+        </div>
+        <div class="comment">
+          <label for="comments">
+            comments
+            <textarea
+              name="textarea"
+              id="textaraComment"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </label>
+        </div>
+      </div>
+      <li style="text-decoration: none">
+        <a href="/cs303Project/htmlSource/librarayMenu/menu.html"style="text-decoration: none"> back</a>
+      </li>
+    </form>
+  </body>
+</html>
