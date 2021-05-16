@@ -17,7 +17,11 @@ const List = require("./Sequence.js");
     return findMaxHelper(L,L.after(p),p.element())
  }
  function findMaxHelper(L,p,max){
-    if(L.isLast(p)) return max
+    if(L.isLast(p)){
+      if(p.element()>max)
+          max=p.element()
+      return max
+    } 
     else if(p.element()>max)
           max=p.element();
     return findMaxHelper(L,L.after(p),max)
@@ -31,6 +35,6 @@ const List = require("./Sequence.js");
  A.insertFirst(8);
  A.insertFirst(9);
  A.insertFirst(9);
- A.insertFirst(90);
+//  A.insertFirst(90);
  console.log(findMax(A))
  //console.log(sumRank(A))

@@ -1,6 +1,4 @@
 const List = require('./HW02-B-Stack');
-
-
 class QueueTwoStack {
     constructor() {
         this._enqueue=new List.Stack();//main stack

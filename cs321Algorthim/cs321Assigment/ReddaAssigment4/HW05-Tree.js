@@ -70,6 +70,21 @@ class Height extends EulerTour {
     height(T) {
         return this.eulerTour(T, T.root());  // this is your helper from the EulerTour Template class 
     }
+    eulerTour(T, p) {
+       let leftH=0;
+       let rightH=0;
+        if (T.isExternal(p)) {
+            return 0
+        } else {
+             this.visitPreOrder(T, p);
+            leftH = 1+this.eulerTour(T, T.leftChild(p));
+            this.visitInOrder(T, p);
+            rightH = 1+this.eulerTour(T, T.rightChild(p));
+            if(leftH>rightH) return leftH
+            return rightH
+        } 
+        return Math.max(leftH,leftH)
+    }
 }
 // Test cases follow here
 var t0 = new Tree.BinarySearchTree();
@@ -117,51 +132,51 @@ console.log("height="+ h.height(t0)+"\n");
 
 console.log("insert 500");
 t0.insertItem(500, 130);
-// console.log("find key= 200, element="+ t0.findElement(200));
-// console.log("find key= 450, element="+ t0.findElement(450));
-// console.log("find key= 500, element="+ t0.findElement(500));
-// t0.insertItem(500, 500);
-// console.log("find key= 500, element="+ t0.findElement(500));
-// console.log("height should be 5");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// inOrderPrinter.print();
-// printer.print(t0);
+console.log("find key= 200, element="+ t0.findElement(200));
+console.log("find key= 450, element="+ t0.findElement(450));
+console.log("find key= 500, element="+ t0.findElement(500));
+t0.insertItem(500, 500);
+console.log("find key= 500, element="+ t0.findElement(500));
+console.log("height should be 5");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+inOrderPrinter.print();
+printer.print(t0);
 
-// console.log("remove=650 elem="+ t0.removeElement(650) +"\n");
-// console.log("height should be 5");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// console.log("remove=400 elem="+ t0.removeElement(400) +"\n");
-// console.log("height should be 4");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// printer.print(t0);
-// console.log("remove=350 elem="+ t0.removeElement(350) +"\n");
+console.log("remove=650 elem="+ t0.removeElement(650) +"\n");
+console.log("height should be 5");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+console.log("remove=400 elem="+ t0.removeElement(400) +"\n");
+console.log("height should be 4");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+printer.print(t0);
+console.log("remove=350 elem="+ t0.removeElement(350) +"\n");
 
-// console.log("height should be 4");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// console.log("remove=150 elem="+ t0.removeElement(150) +"\n");
-// printer.print(t0);
+console.log("height should be 4");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+console.log("remove=150 elem="+ t0.removeElement(150) +"\n");
+printer.print(t0);
 
-// console.log("height should be 4");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// console.log("test of adjustment next");
-// console.log("remove=250 elem="+ t0.removeElement(250) +"\n");
-// printer.print(t0);
+console.log("height should be 4");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+console.log("test of adjustment next");
+console.log("remove=250 elem="+ t0.removeElement(250) +"\n");
+printer.print(t0);
 
-// console.log("height should be 4");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// t0.insertItem(25, 25);
-// t0.insertItem(50, 50); 
-// t0.insertItem(75, 75); 
-// t0.insertItem(80, 80); 
-// console.log("insert 25, 50, 75, 80");
-// console.log("height should be 6");
-// console.log("height="+ height(t0));
-// console.log("height="+ h.height(t0)+"\n");
-// inOrderPrinter.print();
-// printer.print(t0);
+console.log("height should be 4");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+t0.insertItem(25, 25);
+t0.insertItem(50, 50); 
+t0.insertItem(75, 75); 
+t0.insertItem(80, 80); 
+console.log("insert 25, 50, 75, 80");
+console.log("height should be 6");
+console.log("height="+ height(t0));
+console.log("height="+ h.height(t0)+"\n");
+inOrderPrinter.print();
+printer.print(t0);

@@ -1,0 +1,34 @@
+*{
+box-sizing: border-box;
+}
+body{
+display:grid;
+grid-template-areas:
+"header header header header"
+    "content content content content"
+    "footer footer footer footer";
+    border: 10px solid grey;
+}
+header{
+    grid-area: header;
+    background: grey;
+    padding-bottom: baseline;
+    padding-left:20px;
+}
+article{
+    grid-area: content;
+    padding-bottom:baseline;
+    padding-left: 15px;
+}
+footer{
+    grid-area: footer;
+    background: lightgrey;
+    padding-bottom: 10px;
+    text-align: center; 
+
+}
+ul li{
+ text-decoration: none;
+ display: inline;
+ border-spacing: 1em;
+}
