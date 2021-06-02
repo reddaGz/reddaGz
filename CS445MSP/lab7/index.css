@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.top-level{
+    display: flex;
+    flex-direction: row;
+}
+.employe-list{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin:40px;
+    /* border: 30px;
+    border-radius: 0em;
+    border-color: blue; */
+    /* background-color: rgb(226, 145, 23); */
+    /* background-color: blue; */
+}
+.information{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.first-information{
+    margin-top: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: row; 
+    background-color:burlywood;
+}
+.seconed-information{
+    flex: 2;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row; 
+    background-color:burlywood;
+}
+.third-information{
+    flex: 2;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    background-color:burlywood;   
+}
+.profile-pic{
+    flex: 3;
+    margin-left: 20px;
+    /* background-color:burlywood; */
+}
+.list-information{
+    margin-top: 5px;
+    flex: 4;
+    /* background-color:bisque */
+}
+.ref-button{
+    margin-top: 30px;
+    flex: 1;
+    /* background-color: aqua; */
+}
+.ref-button button{
+background-color: aqua;
+height: 30px;
+width: 200px;
+font-size: 20px;
+text-align: center;
+margin-left: 40px;
+}
+.reserve{
+    flex: 2;
+
+}
+p{
+    font-size:larger;
+    font-weight: 100;
+
+}
+
