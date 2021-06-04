@@ -1,0 +1,71 @@
+body{
+    background-color:cadetblue;
+}
+
+.fibBody{
+    background-color:cadetblue;
+    width: 1100px;
+    height: 1300px;
+    /* border:2px solid rebeccapurple ; */
+    margin: 0 auto;
+}
+.fibButton{
+    text-align: center;
+}
+.fib {
+    margin-top: 40px;
+    text-align: center;
+}
+.fib button{
+    width: auto;
+    width: auto;
+    background-color:bisque
+}
+.result{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+.computeL :nth-child(1){
+    margin-right: 300px;
+    margin-left: 200px;
+    margin-bottom: 600px;
+
+}
+.resultTime{
+    background-color:chocolate
+}
+.computeL{
+    margin-top: 60px;
+    font-size: x-large;
+}
+.recu{
+    margin-top: 100px;
+}
+.memo{
+    margin-top: 100px; 
+}
+.loopResult{
+    background-color:cornflowerblue
+}
+.resultRecu{
+    background-color: chocolate;
+}
+.memoResult{
+    background-color:green
+}
+.loop{
+    margin-top: 60px;
+    font-size:x-large; 
+}
+.recu{
+    margin-top: 60px;
+    font-size:x-large;  
+}
+.memo{
+    margin-top: 60px;
+    font-size:x-large;
+}
+.wait{
+    margin-top: 30px;
+   text-align: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fibonacci computed</title>
+    <link rel="stylesheet" href="fib.css" />
+    <script src="./fib.js"></script>
+  </head>
+  <body>
+    
+    <div class="fibBody">
+      <p style="text-align: center; font-size: 40px; "> Compute Fibonacci</p>
+      <div class="fib">
+        <input
+          type="text"
+          id="fibValue"
+          size="40px"
+          style="text-align: center"
+        />
+        <button id="clickCompute">Compute fib</button>
+      </div>
+      <div class="wait">
+        <label for="wait" id="wait">if the values is gerator than 35 wait a moment</label>
+      </div>
+      <div class="result">
+        <div class="loopResult">
+          <div class="resultTime">
+            <div class="computeL">
+              <label>Result</label>
+              <label>Time elapsed(ms)</label>
+            </div>
+          </div>
+          <div class="loop">
+            <label for="loop"> Using loop</label>
+          </div>
+          <div class="computeL">
+            <label id="loopValue">value:</label>
+            <label id="loopTime">time:</label>
+          </div>
+        </div>
+        <div class="resultRecu">
+          <div class="recu">
+            <label for="recurtion"> Using recurtion</label>
+          </div>
+          <div class="computeL">
+            <label id="recuValue">value:</label>
+            <label id="recuTime">time:</label>
+          </div>
+        </div>
+        <div class="memoResult">
+          <div class="memo">
+            <label for="memeo"> Using memo</label>
+          </div>
+          <div class="computeL">
+            <label id="memoValue">value:</label>
+            <label id="memoTime">time:</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
