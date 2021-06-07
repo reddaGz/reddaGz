@@ -76,7 +76,7 @@ function pageOnload() {
 
         async function fetchCurrentLocation() {
           let resultLocations = await fetch(
-            "http://mapquestapi.com/geocoding/v1/reverse?key=q5N7YWFQnHlQCfx0KyD5d1qoATAAFezV&location=" +
+            "https://mapquestapi.com/geocoding/v1/reverse?key=q5N7YWFQnHlQCfx0KyD5d1qoATAAFezV&location=" +
               lati +
               "," +
               long
